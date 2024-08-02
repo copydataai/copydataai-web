@@ -19,29 +19,30 @@ export const LOGO_IMAGE = {
     height: 30,
 };
 
-export const SOCIALS: SocialObjects = [
-    {
+export const SOCIALS: SocialObjects = {
+    Github: {
         name: "Github",
         href: "https://github.com/copydataai",
-        linkTitle: ` ${SITE.author} on Github`,
+        linkTitle: `${SITE.author} on Github`,
         active: true,
     },
-    {
-        name: "LinkedIn",
+    Linkedin: {
+        name: "Linkedin",
         href: "https://www.linkedin.com/in/copydataai",
         linkTitle: `${SITE.author} on LinkedIn`,
         active: true,
     },
-    {
+    Mail: {
         name: "Mail",
         href: "mailto:me@copydataai.com",
         linkTitle: `Send an email to ${SITE.author}`,
         active: true,
     },
-    {
+    Twitter: {
+
         name: "Twitter",
         href: "https://x.com/copydataaireal",
         linkTitle: `${SITE.author} on Twitter`,
         active: true,
     },
-]
+}
