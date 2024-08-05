@@ -1,4 +1,4 @@
-import type { Site, SocialObjects } from "./types";
+import type { Site } from "./types";
 
 export const SITE: Site = {
     website: "https://copydataai.com/",
@@ -10,7 +10,10 @@ export const SITE: Site = {
     postPerPage: 5,
 };
 
-export const LOCALE = ["en-EN"]; // set to [] to use the environment default
+export const LOCALE = {
+  lang: "en", // html lang code. Set this empty and default will be "en"
+  langTag: ["en-EN"], // BCP 47 Language Tags. Set this empty [] to use the environment default
+} as const;
 
 export const LOGO_IMAGE = {
     enable: false,
@@ -19,7 +22,7 @@ export const LOGO_IMAGE = {
     height: 30,
 };
 
-export const SOCIALS: SocialObjects = {
+export const SOCIALS = {
     Github: {
         name: "Github",
         href: "https://github.com/copydataai",
