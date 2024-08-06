@@ -1,0 +1,33 @@
+---
+export interface Props {
+	tag: string;
+	size?: "sm" | "lg";
+}
+
+const { tag, size = "sm" } = Astro.props;
+import { Tag as TagReact } from "lucide-react";
+---
+
+<li
+  class={`inline-block ${
+    size === "sm" ? "my-1 underline-offset-4" : "my-3 mx-1 underline-offset-8"
+  }`}
+>
+  <a
+    href={`/tags/${tag}/`}
+    transition:name={tag}
+    class={`${size === "sm" ? "text-sm" : "text-lg"} pr-2 group`}
+  >
+    <TagReact className={`${size === "sm" ? " scale-75" : "scale-110"}`} />
+    &nbsp;<span>{tag}</span>
+  </a>
+</li>
+
+<style>
+  a {
+    @apply relative underline decoration-dashed hover:-top-0.5 focus-visible:p-1;
+  }
+  a svg {
+    @apply -mr-4 h-6 w-6 scale-95  opacity-80;
+  }
+</style>
