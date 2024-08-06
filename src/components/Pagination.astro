@@ -1,0 +1,53 @@
+---
+import LinkButton from "./LinkButton.astro";
+import { ChevronRight, ChevronLeft } from "lucide-react";
+
+export interface Props {
+	currentPage: number;
+	totalPages: number;
+	prevUrl: string;
+	nextUrl: string;
+}
+
+const { currentPage, totalPages, prevUrl, nextUrl } = Astro.props;
+
+const prev = currentPage > 1 ? "" : "disabled";
+const next = currentPage < totalPages ? "" : "disabled";
+const isPrevDisabled = prev === "disabled";
+const isNextDisabled = next === "disabled";
+---
+
+{
+  totalPages > 1 && (
+    <nav class="pagination-wrapper" aria-label="Pagination">
+      <LinkButton
+        disabled={isPrevDisabled}
+        href={prevUrl}
+        className={`mr-4 select-none ${prev}`}
+        ariaLabel="Previous"
+      >
+        <ChevronLeft classList={[{ "disabled-svg": isPrevDisabled }]} />
+        Prev
+      </LinkButton>
+      {currentPage} / {totalPages}
+      <LinkButton
+        disabled={isNextDisabled}
+        href={nextUrl}
+        className={`ml-4 select-none ${next}`}
+        ariaLabel="Next"
+      >
+        Next
+        <ChevronRight classList={[{ "disabled-svg": isNextDisabled }]} />
+      </LinkButton>
+    </nav>
+  )
+}
+
+<style>
+  .pagination-wrapper {
+    @apply mb-8 mt-auto flex justify-center;
+  }
+  .disabled {
+    @apply pointer-events-none select-none opacity-50;
+  }
+</style>
