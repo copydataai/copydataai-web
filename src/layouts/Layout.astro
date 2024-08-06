@@ -3,18 +3,18 @@ import { SITE } from "@config";
 import "@styles/base.css";
 import { ViewTransitions } from "astro:transitions";
 export interface Props {
-  title?: string;
-  author?: string;
-  description?: string;
-  ogImage?: string;
-  canonicalURL?: string;
+	title?: string;
+	author?: string;
+	description?: string;
+	ogImage?: string;
+	canonicalURL?: string;
 }
 
 const {
-  title = SITE.title,
-  author = SITE.author,
-  description = SITE.desc,
-  ogImage = SITE.ogImage,
+	title = SITE.title,
+	author = SITE.author,
+	description = SITE.desc,
+	ogImage = SITE.ogImage,
 } = Astro.props;
 ---
 
