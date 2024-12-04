@@ -14,6 +14,8 @@ tags:
   - DevOps
 ---
 
+## Table of contents
+
 ## Introduction
 
 Telegram bots have become indispensable tools for automating tasks, providing instant user interaction, and integrating with continuous deployment (CD) pipelines. In this blog, we’ll explore the steps to create a Telegram bot using Go, detailing two approaches: **polling** and **webhooks**. Whether you’re just starting with bots or looking to streamline your deployment process, this guide has you covered.
