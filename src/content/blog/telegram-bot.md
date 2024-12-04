@@ -1,8 +1,9 @@
 ---
 author: Jose Sanchez
-pubDatetime: 2024-11-12T23:22:00Z
-modDatetime: 2024-11-12T23:52:47.00Z
-title: telegram bot
+title: Creating a Telegram Bot
+description: A guide on how to create and deploy a Telegram bot using Go
+pubDatetime: 2024-11-12T13:22:00Z
+modDatetime: 2024-11-12T13:52:47.00Z
 slug: telegram-bot
 featured: true
 draft: false
@@ -11,9 +12,7 @@ tags:
   - go
   - Continuos Deployment
   - DevOps
-description: Telegram bots have become indispensable tools for automating tasks, providing instant user interaction, and integrating with continuous deployment (CD) pipelines. In this blog, we’ll explore the steps to create a Telegram bot using Go, detailing two approaches: **polling** and **webhooks**. Whether you’re just starting with bots or looking to streamline your deployment process, this guide has you covered.
-
-# Building a Telegram Bot with Go: A Continuous Deployment Companion
+---
 
 ## Introduction
 
@@ -200,4 +199,3 @@ func main() {
 Building a Telegram bot with Go is a powerful way to automate tasks and integrate with modern deployment pipelines. Whether you choose polling for simplicity or webhooks for scalability, Telegram’s API makes it straightforward to get started. Try creating a bot today to enhance your projects!
 
 ---
-
