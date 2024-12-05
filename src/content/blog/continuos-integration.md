@@ -1,6 +1,6 @@
 ---
 author: Jose Sanchez
-title: Continuous Integration (CI) with GitHub Actions: A Practical Guide
+title: Continuous Integration (CI) with GitHub Actions
 description: Continuos Integration (CI) with Github Actions
 pubDatetime: 2024-12-03T08:22:00Z
 modDatetime: 2024-12-03T08:22:47.00Z
