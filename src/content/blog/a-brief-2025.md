@@ -5,8 +5,8 @@ description: A brief 2025 Q1
 pubDatetime: 2025-03-10T13:22:00Z
 modDatetime: 2024-03-11T20:52:47.00Z
 slug: a-brief-2025-q1
-featured: false
-draft: true
+featured: true
+draft: false
 tags:
   - self
 ---
