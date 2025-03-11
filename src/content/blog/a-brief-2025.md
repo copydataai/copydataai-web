@@ -1,10 +1,10 @@
 ---
 author: Jose Sanchez
-title: 2025
-description: A brief
+title: a Brief 2025
+description: A brief 2025 Q1
 pubDatetime: 2025-03-10T13:22:00Z
 modDatetime: 2024-03-11T20:52:47.00Z
-slug: 2025
+slug: a-brief-2025-q1
 featured: false
 draft: true
 tags:
@@ -13,7 +13,7 @@ tags:
 
 ## Table of contents
 
-## 2025
+## 2025 Q1
 > An unexamined life is not worth living - Aristotle
 
 There's a conception that putting a lot of effort into anything will guarantee you success on that or many things, which I could be rational and think is correct.
